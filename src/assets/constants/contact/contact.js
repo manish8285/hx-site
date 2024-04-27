@@ -1,0 +1,1 @@
+export const mobileNumber = "+91 8587823264"
