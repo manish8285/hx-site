@@ -69,7 +69,7 @@ export default function Home() {
 									<div class="single-content">
 										<span>All</span>
 										<h4>Homeopathic Medicine</h4>
-										<p>"Discover the efficacy of our available homeopathic medicines – crafted to nurture your well-being!".</p>
+										<p>Discover the efficacy of our available homeopathic medicines {'-'} crafted to nurture your well-being!.</p>
 										
 									</div>
 								</div>
@@ -211,7 +211,7 @@ Experience a holistic approach to healing with our natural homeopathic medicines
 					<div class="col-lg-12 col-md-12 col-12">
 						<div class="content">
 							<h2>Have questions or need assistance? Call @ {mobileNumber}</h2>
-							<p>If you have any questions, feel free to reach out during our working hours. We're here to assist you!</p>
+							<p>If you have any questions, feel free to reach out during our working hours. We are here to assist you!</p>
 							<div class="button">
 								<a href="#" class="btn">Contact Now</a>
 								<a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>

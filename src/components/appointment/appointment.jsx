@@ -64,7 +64,7 @@ const Appointment = () => {
             <div className="section-title">
               <h2>We Are Always Ready to Help You. Book An Appointment</h2>
               <img className='inline' src="img/section-img.png" alt="#" />
-              <p>Book an appointment or visit us – we're always here to assist you.</p>
+              <p>Book an appointment or visit us {'-'} we're always here to assist you.</p>
             </div>
           </div>
         </div>
