@@ -21,7 +21,7 @@ DESTINATION_EMAIL=[where you want to receive email]
 ## Technologies Used  
 1. NextJS  
 2. Tailwind CSS  
-3. JSX
+3. JSX 
 
 
 
