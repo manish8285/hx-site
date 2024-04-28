@@ -24,8 +24,7 @@ export default function Home() {
               <h1>We Provide <span>Homeopathic </span> Treatment That You Can <span>Trust!</span></h1>
               <p>Experience holistic healing with personalized homeopathic treatments tailored to your individual needs.</p>
               <div className="button">
-                <a href="#" className="btn">Get Appointment</a>
-                <a href="#" className="btn primary">Learn More</a>
+                <a href="#appointment" className="btn">Get Appointment</a>
               </div>
             </div>
           </div>

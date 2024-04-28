@@ -11,12 +11,16 @@ const Appointment = () => {
     message: ''
   });
 
+  const [ loading, setLoading ] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
+
     // Prepare the form data to send
     const data = {
       name: formData.name,
@@ -52,7 +56,9 @@ const Appointment = () => {
     })
     .catch(error => {
       console.error('There was a problem with your fetch operation:', error);
+      toast.error("Something went wrong")
     });
+    setLoading(false);
   };
   
 
@@ -89,7 +95,7 @@ const Appointment = () => {
                 </div>
                 <div className="col-lg-6 col-md-6 col-12">
                   <div className="form-group">
-                    <input type="text" placeholder="Date" id="datepicker" value={formData.date} onChange={handleChange} />
+                    <input type="date" placeholder="Date" id="datepicker"  onChange={(event)=>setFormData({...formData,'date':event.target.value})} />
                   </div>
                 </div>
                 <div className="col-lg-12 col-md-12 col-12">
@@ -102,7 +108,7 @@ const Appointment = () => {
                 <div className="col-lg-5 col-md-4 col-12">
                   <div className="form-group">
                     <div className="button">
-                      <button type="submit" className="btn">Book An Appointment</button>
+                      <button type="submit" disabled={loading} className="btn">{loading?'Sending ...':'Book An Appointment'}</button>
                     </div>
                   </div>
                 </div>

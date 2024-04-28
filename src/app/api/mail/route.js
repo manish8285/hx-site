@@ -38,7 +38,7 @@ export const POST = async (req, res) => {
       from: `HX Site | "${name}" <info@homeorx.in>`,
       to: process.env.DESTINATION_EMAIL, // Add your email address where you want to receive the message
       subject: `Appointment - ${name} - ${phone} - ${email}`,
-      text: message,
+      text: `appointment date - ${date} , description - ${message}`,
     });
 
     console.log('Message sent: %s', info.messageId);
